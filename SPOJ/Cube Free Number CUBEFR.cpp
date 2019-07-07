@@ -16,7 +16,6 @@ void cubefree()
     }
 }
 
-
 int main()
 {
     cubefree();
