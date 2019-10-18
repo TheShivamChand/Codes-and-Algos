@@ -2,7 +2,7 @@
 typedef long long int ll;
 using namespace std;
 vector<bool>prime(1000001,true);
-void isprime()
+void isprime()						//To determine if the number is prime or not
 {
 	for(int i=2;i*i<=1000000;i++)
 	{
@@ -14,7 +14,7 @@ void isprime()
 	}
 }
 
-int findprime(int n,map<int,int>&factors)
+int findprime(int n,map<int,int>&factors)		//Finding the prime factors
 {
 	for(int i=2;i*i<=n;i++)
 	{
@@ -33,7 +33,7 @@ int findprime(int n,map<int,int>&factors)
 		factors[n]+=1;
 }
 
-int main()
+int main()					//Main function
 {
 	isprime();
 	int t;
